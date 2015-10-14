@@ -48,9 +48,9 @@
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(157);
-	var demo = __webpack_require__(158);
+	var TestNode = __webpack_require__(158);
 
-	ReactDOM.render(React.createElement('demo', null), document.getElementById('react-container'));
+	ReactDOM.render(React.createElement(TestNode, null), document.getElementById('react-container'));
 
 /***/ },
 /* 1 */
@@ -19607,19 +19607,19 @@
 
 	var React = __webpack_require__(1);
 
-	var demo = React.createClass({
-	    displayName: 'demo',
+	var TestNode = React.createClass({
+	    displayName: 'TestNode',
 
 	    render: function render() {
 	        return React.createElement(
 	            'h1',
 	            null,
-	            'Hello world'
+	            'Hello world from React'
 	        );
 	    }
 	});
 
-	module.exports = demo;
+	module.exports = TestNode;
 
 /***/ }
 /******/ ]);
