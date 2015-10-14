@@ -1,5 +1,5 @@
 var React = require('react')
 var ReactDOM = require('react-dom')
-var demo = require('./components/demo')
+var TestNode = require('./components/TestNode')
 
-ReactDOM.render(<demo />, document.getElementById('react-container'))
+ReactDOM.render(<TestNode />, document.getElementById('react-container'))
