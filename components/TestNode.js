@@ -1,5 +1,6 @@
-var React = require('react')
-var io = require('socket.io-client')
+import React from 'react'
+import io from 'socket.io-client'
+
 var Header = require('./parts/Header')
 
 var TestNode = React.createClass({
@@ -34,6 +35,7 @@ var TestNode = React.createClass({
         return (
             <div>
                 <Header title={this.state.title} status={this.state.status} />
+                {this.props.children}
             </div>
         )
     }

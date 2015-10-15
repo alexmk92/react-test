@@ -1,4 +1,5 @@
-var react = require('react')
+import React from 'react'
+
 var Speaker = React.createClass({
     render() {
         return (

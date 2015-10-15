@@ -1,11 +1,12 @@
-var express = require('express')
-var app = express()
+var Express = require('express')
+
+var app = Express()
 
 var connections = []
 var title = 'Untitled Presentation'
 
-app.use(express.static('./public'))
-app.use(express.static('./node_modules/bootstrap/dist'))
+app.use(Express.static('./public'))
+app.use(Express.static('./node_modules/bootstrap/dist'))
 
 var server = app.listen(3000)
 console.log('polling server running on localhost:3000')

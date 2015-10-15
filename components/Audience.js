@@ -1,4 +1,5 @@
-var react = require('react')
+import React from 'react'
+
 var Audience = React.createClass({
     render() {
         return (
