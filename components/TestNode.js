@@ -13,7 +13,7 @@ var TestNode = React.createClass({
             audience: [],
             speaker: '',
             questions: [],
-            result: {},
+            results: {},
             currentQuestion: false
         }
     },
@@ -37,7 +37,7 @@ var TestNode = React.createClass({
     disconnect() {
         this.setState({
             status: 'disconnected',
-            title: 'Disconnected, waiting for speaker to rejoin',
+            title: 'Connection to the server was lost...',
             speaker: ''
         })
     },
@@ -83,9 +83,9 @@ var TestNode = React.createClass({
         })
     },
     // Listen for when we get inbound results
-    updateResults(results) {
+    updateResults(data) {
         this.setState({
-            results: results
+            results: data
         })
     },
     // using ... activates JSX spread operator to pass all data down

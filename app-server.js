@@ -13,7 +13,7 @@ var results = {
     d: 0
 }
 var questions = require('./app-questions')
-var title = 'Untitled Presentation'
+var title = 'Waiting for Speaker...'
 
 app.use(Express.static('./public'))
 app.use(Express.static('./node_modules/bootstrap/dist'))
@@ -39,7 +39,7 @@ io.sockets.on('connection', function(socket) {
         {
             console.log("The speaker: %s has left the stream, the Presentation: %s is now over", speaker.name, title)
             speaker = {}
-            title = "Waiting for Speaker"
+            title = "Waiting for Speaker..."
             io.sockets.emit('end', { title: title, speaker: '' })
         }
 

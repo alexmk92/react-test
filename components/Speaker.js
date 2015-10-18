@@ -5,7 +5,7 @@ var JoinSpeaker = require('./parts/JoinSpeaker')
 var Attendance = require('./parts/Attendance')
 var Questions = require('./parts/Questions')
 
-var Speaker = React.createClass({
+class Speaker extends React.Component {
     render() {
         return (
             <div>
@@ -25,6 +25,6 @@ var Speaker = React.createClass({
             </div>
         )
     }
-})
+}
 
 module.exports = Speaker
